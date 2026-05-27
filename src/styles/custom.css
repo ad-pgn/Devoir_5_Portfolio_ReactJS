@@ -24,3 +24,24 @@ h1, h2, h3, h4, h5, h6, strong {
     font-weight: 600;
     text-decoration: underline;
 }
+
+/* FOOTER */
+.footer-link {
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #fff;
+    font-weight: 600;
+}
+
+.footer-social-icon {
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+
+.footer-social-icon:hover {
+    color: #fff;
+}
