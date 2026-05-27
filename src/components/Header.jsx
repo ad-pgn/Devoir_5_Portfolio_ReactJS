@@ -30,7 +30,7 @@ function Header() {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
-    )
+    );
 }
 
 export default Header;
