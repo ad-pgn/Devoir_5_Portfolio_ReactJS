@@ -91,3 +91,22 @@ h1, h2, h3, h4, h5, h6, strong {
 .modal-body p {
     border-bottom-color: rgba(255, 255, 255, 0.2);
 }
+
+/* BANNIERE */
+.page-banner {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* CARDS SERVICES */
+.service-card {
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.service-card:hover {
+    background-color: #efefef;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
