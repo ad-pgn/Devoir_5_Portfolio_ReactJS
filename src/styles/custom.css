@@ -69,3 +69,25 @@ h1, h2, h3, h4, h5, h6, strong {
     position: relative;
     z-index: 1;
 }
+
+/* MODALE */
+.modal-content {
+    background-color: #1a2035;
+    color: #fff;
+}
+
+.modal-header {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal-footer {
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+.modal-body p {
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+}
