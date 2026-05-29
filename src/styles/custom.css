@@ -102,11 +102,29 @@ h1, h2, h3, h4, h5, h6, strong {
 
 /* CARDS SERVICES */
 .service-card {
-    transition: all 0.3 ease;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .service-card:hover {
     background-color: #efefef;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* CARDS PORTFOLIO */
+.portfolio-card {
+    transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+    background-color: #efefef;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-btn {
+    transition: all 0.3s ease;
+}
+
+.portfolio-btn:hover {
+    filter: brightness(1.2);
 }
