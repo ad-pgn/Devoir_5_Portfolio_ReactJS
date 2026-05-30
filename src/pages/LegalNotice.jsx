@@ -5,7 +5,8 @@ function LegalNotice() {
     return (
         <>
             <Helmet>
-            <meta name="robots" content="noindex, nofollow" />
+                <title>Mentions légales - John Doe</title>
+                <meta name="robots" content="noindex, nofollow" />
             </Helmet>
 
             {/* Contenu */}
