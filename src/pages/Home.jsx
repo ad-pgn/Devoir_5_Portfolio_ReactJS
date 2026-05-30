@@ -1,15 +1,22 @@
+// Page Accueil - Page principale du portfolio
 import { useState } from 'react';
-import {Container, Row, Col, Button, ProgressBar} from 'react-bootstrap';
+import { Container, Row, Col, Button, ProgressBar } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
+
+// Images
 import heroBg from '../assets/images/hero-bg.jpg';
 import johnDoeAbout from '../assets/images/john-doe-about.jpg';
+
+// Composants
 import GithubModal from '../components/GithubModal';
 
 function Home() {
+    // État contrôlant l'affichage de la modale GitHub
     const [showModal, setShowModal] = useState(false);
 
     return (
       <>
+        {/* Balises SEO */}
         <Helmet>
             <title>John Doe - Développeur web full stack</title>
             <meta name="description" content="John Doe, développeur web full stack basé à Lyon. Découvrez mon portfolio, mes services et contactez-moi pour vos projets web." />
@@ -20,6 +27,7 @@ function Home() {
             <div>
                 <h1>Bonjour, je suis John Doe</h1>
                 <h2>Développeur web full stack</h2>
+                {/* Bouton ouvrant la modale GitHub */}
                 <Button variant="danger" className="mt-3" onClick={() => setShowModal(true)}>
                     En savoir plus
                 </Button>
@@ -31,7 +39,7 @@ function Home() {
             <Container>
                 <Row className="bg-white rounded shadow p-4">
 
-                    {/* À propos */}
+                    {/* Colonne gauche - Présentation */}
                     <Col md={6} className="mb-4 mb-md-0">
                         <h2>À propos</h2>
                         <hr className="border-primary border-2 opacity-100 w-25" />
@@ -41,7 +49,7 @@ function Home() {
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, necessitatibus consectetur tempore perferendis nostrum, ex delectus reiciendis impedit aut iure enim placeat? Natus, neque at?</p>
                     </Col>
 
-                    {/* Compétences */}
+                    {/* Colonne droite - Compétences avec barres de progression */}
                     <Col md={6}>
                         <h2>Mes compétences</h2>
                         <hr className="border-primary border-2 opacity-100 w-25" />

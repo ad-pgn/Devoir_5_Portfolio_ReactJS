@@ -1,9 +1,12 @@
+// Page Mentions légales - Informations légales du site
+// Cette page est exclue de l'indexation des moteurs de recherche (noindex)
 import { Container, Accordion } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 
 function LegalNotice() {
     return (
         <>
+            {/* Balises SEO - noindex pour exclure la page des moteurs de recherche */}
             <Helmet>
                 <title>Mentions légales - John Doe</title>
                 <meta name="robots" content="noindex, nofollow" />
@@ -15,6 +18,7 @@ function LegalNotice() {
                     <h1 className="text-center mb-2">Mentions légales</h1>
                     <hr className="border-primary border-2 opacity-100 w-25 mx-auto mb-5" />
 
+                    {/* Accordéon Bootstrap - chaque section s'ouvre/ferme indépendamment */}
                     <Accordion>
 
                         {/* Éditeur */}
@@ -22,6 +26,8 @@ function LegalNotice() {
                             <Accordion.Header>Éditeur du site</Accordion.Header>
                             <Accordion.Body>
                                 <h2 className="fs-5">John Doe</h2>
+
+                                {/* Balise sémantique pour les coordonnées */}
                                 <address>
                                     <p><i className="bi bi-building me-2"></i>40 rue Laure Diebold</p>
                                     <p><i className="bi bi-geo-alt me-2"></i>69009 Lyon, France</p>

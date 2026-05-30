@@ -1,7 +1,9 @@
+// Page Services - Présentation des offres de services
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import banner from '../assets/images/banner.jpg'
 
+// Données des services - tableau d'objets pour faciliter la maintenance
 const services = [
     {
         id: 1,
@@ -26,6 +28,7 @@ const services = [
 function Services() {
     return (
         <>
+            {/* Balises SEO */}
             <Helmet>
                 <title>Services - John Doe</title>
                 <meta name="description" content="Découvrez les services proposés par John Doe : UX Design, développement web et référencement naturel (SEO)." />
@@ -41,9 +44,11 @@ function Services() {
                     <p className="text-center text-muted mb-2">Voici les prestations sur lesquelles je peux intervenir</p>
                     <hr className="border-primary border-2 opacity-100 w-25 mx-auto mb-5"/>
 
+                    {/* Génération dynamique des cards depuis le tableau services */}
                     <Row className="g-4">
                         {services.map(service => (
                             <Col md={4} key={service.id}>
+                                {/* service-card : classe custom pour l'effet hover (voir custom.css) */}
                                 <Card className="h-100 text-center p-4 service-card border">
                                     <Card.Body>
                                         <i className={`${service.icon} fs-1 text-primary mb-3 d-block`}></i>
