@@ -1,3 +1,4 @@
+// Composant Footer - Pied de page présent sur toutes les pages
 import {NavLink} from 'react-router-dom';
 import {Container, Row, Col} from 'react-bootstrap';
 
@@ -6,15 +7,18 @@ function Footer() {
         <footer className="bg-dark text-white py-5 mt-auto">
             <Container>
                 <Row>
-                    {/* Colonne 1 - Infos */}
+                    {/* Colonne 1 - Coordonnées et réseaux sociaux */}
                     <Col md={4} className="mb-4 mb-md-0">
                         <h5 className="fw-semibold mb-3">John Doe</h5>
+                        {/* Balise sémantique pour les coordonnées */}
                         <address className="mb-3">
                             <span className="d-block mb-1">40 rue Laure Diebold</span>
                             <span className="d-block mb-1">69009 Lyon, France</span>
                             <span className="d-block mb-1">10 20 30 40 50</span>
                             <span className="d-block mb-1">john.doe@gmail.com</span>
                         </address>
+
+                        {/* Icônes réseaux sociaux - s'ouvrent dans un nouvel onglet */}
                         <div className="d-flex gap-3">
                             <a href="https://github.com/johndoe" target="_blank" rel="noopener noreferrer nofollow" className="footer-social-icon">
                                 <i className="bi bi-github fs-5"></i>
@@ -28,7 +32,7 @@ function Footer() {
                         </div>
                     </Col>
 
-                    {/* Colonne 2 - Liens utiles */}
+                    {/* Colonne 2 - Liens vers les pages du site */}
                     <Col md={4} className="mb-4 mb-md-0">
                         <h5 className="fw-semibold mb-3">Liens utiles</h5>
                         <ul className="list-unstyled">
@@ -41,6 +45,7 @@ function Footer() {
                     </Col>
 
                     {/* Colonne 3 - Dernières réalisations */}
+                    {/* Les liens pointent vers /portfolio en attendant les pages individuelles */}
                     <Col md={4}>
                         <h5 className="fw-semibold mb-3">Mes dernières réalisations</h5>
                         <ul className="list-unstyled">

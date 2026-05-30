@@ -1,3 +1,4 @@
+// Page Contact - Formulaire de contact et coordonnées
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet';
 import banner from '../assets/images/banner.jpg';
@@ -5,6 +6,7 @@ import banner from '../assets/images/banner.jpg';
 function Contact() {
     return (
         <>
+            {/* Balises SEO */}
             <Helmet>
                 <title>Contact - John Doe</title>
                 <meta name="description" content="Contactez John Doe pour vos projets web. Formulaire de contact, téléphone et adresse disponibles." />
@@ -22,10 +24,12 @@ function Contact() {
 
                     <Row className="bg-white rounded shadow p-4">
 
-                        {/* Formulaire */}
+                        {/* Colonne gauche - Formulaire */}
                         <Col md={6} className="mb-4 mb-md-0">
                             <h2 className="mb-3">Formulaire de contact</h2>
                             <hr className="border-primary border-2 opacity-100 w-100 mb-4" />
+                            
+                            {/* Tous les champs sont obligatoires (required) */}
                             <form>
                                 <div className="mb-3">
                                     <input type="text" className="form-control" placeholder="Votre nom" required />
@@ -48,9 +52,12 @@ function Contact() {
                             </form>
                         </Col>
 
+                        {/* Colonne droite - Coordonnées et Google Map */}
                         <Col md={6}>
                             <h2 className="mb-3">Mes coordonnées</h2>
                             <hr className="border-primary border-2 opacity-100 w-100 mb-4" />
+                            
+                            {/* Balise sémantique pour les coordonnées */}
                             <address>
                                 <p><strong>John Doe</strong></p>
                                 <p><i className="bi bi-building me-2"></i>40 rue Laure Diebold</p>
