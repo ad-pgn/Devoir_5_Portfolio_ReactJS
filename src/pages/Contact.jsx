@@ -1,9 +1,15 @@
 import { Container, Row, Col } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import banner from '../assets/images/banner.jpg';
 
 function Contact() {
     return (
         <>
+            <Helmet>
+                <title>Contact - John Doe</title>
+                <meta name="description" content="Contactez John Doe pour vos projets web. Formulaire de contact, téléphone et adresse disponibles." />
+            </Helmet>
+
             {/* Bannière */}
             <section className="page-banner" style={{backgroundImage: `url(${banner})`}}></section>
 

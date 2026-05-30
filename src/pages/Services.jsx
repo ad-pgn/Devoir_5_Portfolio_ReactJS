@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import banner from '../assets/images/banner.jpg'
 
 const services = [
@@ -25,6 +26,11 @@ const services = [
 function Services() {
     return (
         <>
+            <Helmet>
+                <title>Services - John Doe</title>
+                <meta name="description" content="Découvrez les services proposés par John Doe : UX Design, développement web et référencement naturel (SEO)." />
+            </Helmet>
+
             {/* Bannière */}
             <section className="page-banner" style={{backgroundImage: `url(${banner})`}}></section>
 

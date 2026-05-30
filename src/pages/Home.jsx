@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {Container, Row, Col, Button, ProgressBar} from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import heroBg from '../assets/images/hero-bg.jpg';
 import johnDoeAbout from '../assets/images/john-doe-about.jpg';
 import GithubModal from '../components/GithubModal';
@@ -9,6 +10,11 @@ function Home() {
 
     return (
       <>
+        <Helmet>
+            <title>John Doe - Développeur web full stack</title>
+            <meta name="description" content="John Doe, développeur web full stack basé à Lyon. Découvrez mon portfolio, mes services et contactez-moi pour vos projets web." />
+        </Helmet>
+        
         {/* Section Hero */}
         <section className="hero d-flex align-items-center justify-content-center text-white text-center" style={{backgroundImage: `url(${heroBg})`}}>
             <div>

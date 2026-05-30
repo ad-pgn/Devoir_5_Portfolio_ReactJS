@@ -1,4 +1,5 @@
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Helmet } from 'react-helmet';
 import banner from '../assets/images/banner.jpg';
 import coderImg from '../assets/images/portfolio/coder.jpg';
 import espaceBienEtreImg from '../assets/images/portfolio/espace-bien-etre.jpg';
@@ -61,6 +62,11 @@ const projets = [
 function Portfolio() {
     return (
         <>
+            <Helmet>
+                <title>Portfolio - John Doe</title>
+                <meta name="description" content="Découvrez les réalisations de John Doe : sites web, applications, référencement et maquettes." />
+            </Helmet>
+            
             {/* Bannière */}
             <section className="page-banner" style={{backgroundImage: `url(${banner})`}}></section>
 
