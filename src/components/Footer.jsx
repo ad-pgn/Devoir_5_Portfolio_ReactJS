@@ -9,7 +9,7 @@ function Footer() {
                 <Row>
                     {/* Colonne 1 - Coordonnées et réseaux sociaux */}
                     <Col md={4} className="mb-4 mb-md-0">
-                        <h5 className="fw-semibold mb-3">John Doe</h5>
+                        <h3 className="fw-semibold mb-3">John Doe</h3>
                         {/* Balise sémantique pour les coordonnées */}
                         <address className="mb-3">
                             <span className="d-block mb-1">40 rue Laure Diebold</span>
@@ -34,7 +34,7 @@ function Footer() {
 
                     {/* Colonne 2 - Liens vers les pages du site */}
                     <Col md={4} className="mb-4 mb-md-0">
-                        <h5 className="fw-semibold mb-3">Liens utiles</h5>
+                        <h3 className="fw-semibold mb-3">Liens utiles</h3>
                         <ul className="list-unstyled">
                             <li><NavLink to="/" className="footer-link">Accueil</NavLink></li>
                             <li><NavLink to="/services" className="footer-link">Services</NavLink></li>
@@ -47,7 +47,7 @@ function Footer() {
                     {/* Colonne 3 - Dernières réalisations */}
                     {/* Les liens pointent vers /portfolio en attendant les pages individuelles */}
                     <Col md={4}>
-                        <h5 className="fw-semibold mb-3">Mes dernières réalisations</h5>
+                        <h3 className="fw-semibold mb-3">Mes dernières réalisations</h3>
                         <ul className="list-unstyled">
                             <li><NavLink to="/portfolio" className="footer-link">Fresh Food</NavLink></li>
                             <li><NavLink to="/portfolio" className="footer-link">Restaurant Akira</NavLink></li>

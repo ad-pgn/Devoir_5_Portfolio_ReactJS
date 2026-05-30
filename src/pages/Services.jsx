@@ -35,7 +35,7 @@ function Services() {
             </Helmet>
 
             {/* Bannière */}
-            <section className="page-banner" style={{backgroundImage: `url(${banner})`}}></section>
+            <div className="page-banner" style={{backgroundImage: `url(${banner})`}}></div>
 
             {/* Contenu */}
             <section className="py-5">
